@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><title>Sentiment Demo</title>
+</head><body><form action="{{ url_for('index_page') }}" method="post">
+    <dl>
+        <dt>Enter movie review (e.g. good, bad or longer phrases):<br>
+	<dt> <br>
+        </dt><dd><textarea name="text" rows="5" cols="40">{{ text }}</textarea>
+        </dd><dd><input value="Evaluate" type="submit">
+    </dd></dl>
+</form>
+
+<br>Sentiment prediction: 
+{{ prediction_message }}
+<br>
+<br>
+<br>Note 1: Due to space limitations on free AWS accounts, the model hosted here has been trained 
+<br>on a subset of available data and is, therefore, less accurate. The complete model is available <a href="https://github.com/akuritsyn/MovieSentimentClassifier">here</a>.
+<br>
+<br>Note 2: The model uses a binary classifier. As a follow up step, one can try to add a 
+<br>confidence metric to the results based on the predicition probability reported by the classifier.
+</body></html>

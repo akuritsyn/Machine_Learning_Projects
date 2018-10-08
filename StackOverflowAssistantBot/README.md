@@ -1,6 +1,6 @@
-# Stack Overflow Assistant Chat Bot is up and running and can be accessed via Telegram messenger as AKStackOverflowBot
+# Stackoverflow Assistant NLP Chatbot for answering programming questions using Stackoverflow dataset is up and running and can be accessed via Telegram messenger at AKStackOverflowBot.
 
 
 *** In progress ***
 
-Details will be posted shortly!
+Additional details will be updated shortly!

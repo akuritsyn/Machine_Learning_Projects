@@ -1,4 +1,4 @@
-# Stack Overflow Assistant Chat Bot is up and running and can be accessed on Telegram as AKStackOverflowBot
+# Stack Overflow Assistant Chat Bot is up and running and can be accessed via Telegram messenger as AKStackOverflowBot
 
 
 *** In progress ***

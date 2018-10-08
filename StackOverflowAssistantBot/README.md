@@ -3,4 +3,4 @@
 
 *** In progress ***
 
-Additional details will be updated shortly!
+Additional details will be posted shortly!

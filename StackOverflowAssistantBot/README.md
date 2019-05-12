@@ -15,8 +15,7 @@ compute cosine-similarity to get the highest ranked answer.
 
 #### 2. The workflow for running the chatbot on AWS: AWS --> ssh --> tmux --> docker --> python
 
-- Create AWS instance
-You can use [this instructions](https://github.com/hse-aml/natural-language-processing/blob/master/AWS-tutorial.md) 
+- Create AWS instance ([instructions](https://github.com/hse-aml/natural-language-processing/blob/master/AWS-tutorial.md))
 
 - ssh to it & copy all nesessary files to <bot_folder>
 
@@ -34,17 +33,19 @@ tmux attach -t <bot_session>
 cd <bot_folder>
 ```
 
-- Run docker ([tutorial] (https://github.com/hse-aml/natural-language-processing/blob/master/Docker-tutorial.md)):
+- Run docker ([tutorial](https://github.com/hse-aml/natural-language-processing/blob/master/Docker-tutorial.md)):
 ```sh
 docker pull akashin/coursera-aml-nlp
 ```
+Get list of containers: 
 ```sh
-get list of containers: docker ps -a
+docker ps -a
 ```
+Remove old container: 
 ```sh
-remove old container: docker rm coursera-aml-nlp
+docker rm coursera-aml-nlp
 ```
-- Start new container and mount a directory from your local machine within the container using -v option (can use different path instead of PWD):
+- Start new container and mount a directory from your local machine within the container using -v option (one can use different path instead of PWD):
 ```sh
 docker run -it -p 8080:8080 --name coursera-aml-nlp -v $PWD:/root/coursera akashin/coursera-aml-nlp
 ```
@@ -56,4 +57,4 @@ Talk to @BotFather in Telegram. The command "/newbot" will create a bot for you.
 ```sh
 python3 main_bot.py --token=<your token>
 ```
-Ctrl+b & d - to detach tmux session
+- Ctrl+b & d - to detach tmux session
